@@ -50,7 +50,7 @@
   <body>
     <div class="sidebar">
       <h4 class="text-center text-white py-3">Admin</h4>
-      <a href="konten/Dashboard/" target="kontenFrame">
+      <a href="konten/Dashboard/index.php" target="kontenFrame">
         <i class="bi bi-house"></i> Dashboard
       </a>
       <a
@@ -66,18 +66,18 @@
         <a href="konten/DataSiswa/" target="kontenFrame">
           <i class="bi bi-person-plus"></i> Input Data Siswa
         </a>
-        <a href="./konten/DataSiswa/dataSiswa.php" target="kontenFrame">
+        <a href="konten/DataSiswa/dataSiswa.php" target="kontenFrame">
           <i class="bi bi-people"></i> Data Siswa
         </a>
       </div>
 
-      <a href="./konten/DataGuru/index.html" target="kontenFrame">
+      <a href="konten/DataGuru/index.php" target="kontenFrame">
         <i class="bi bi-person-badge"></i> Data Guru
       </a>
     </div>
 
     <div class="content">
-      <iframe src="konten/Dashboard/index.html" name="kontenFrame"></iframe>
+      <iframe src="konten/Dashboard/index.php" name="kontenFrame"></iframe>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
