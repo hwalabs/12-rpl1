@@ -24,10 +24,10 @@
             <tr>
               <th scope="col">No</th>
               <th scope="col">Nama</th>
-              <th scope="col">Tanggal Lahir</th>
-              <th scope="col">Jenis Kelamin</th>
-              <th scope="col">Jurusan</th>
-              <th scope="col">Aksi</th>
+              <th scope="col" class="w-25">Tanggal Lahir</th>
+              <th scope="col" class="w-25">Jenis Kelamin</th>
+              <th scope="col" class="w-25">Jurusan</th>
+              <th scope="col" class="w-25">Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -38,12 +38,12 @@
             ?> 
               <tr>
                 <td><?= $no ?></td>
-                <td><?= $data['nama'] ?></td>
-                <td><?= $data['tanggal_lahir'] ?></td>
-                <td><?= $data['jenis_kelamin'] ?></td>
-                <td><?= $data['jurusan'] ?></td>
-                <td><a href="formEditSiswa.php?id_siswa=<?= $data['id_siswa'] ?>"><i class="bi bi-pencil-square"></i></a></td>
-                <td><a href="../../backend/querySql/deleteSiswa.php?id_siswa=<?=$data['id_siswa'] ?>"><i class="bi bi-trash text-danger"></i></a></td>
+                <td class="w-50"><?= $data['nama'] ?></td>
+                <td class="w-25"><?= $data['tanggal_lahir'] ?></td>
+                <td class="w-25"><?= $data['jenis_kelamin'] ?></td>
+                <td class="w-25"><?= $data['jurusan'] ?></td>
+                <td class="w-25"><a href="formEditSiswa.php?id_siswa=<?= $data['id_siswa'] ?>"><i class="bi bi-pencil-square"></i></a></td>
+                <td class="w-25"><a href="../../backend/querySql/deleteSiswa.php?id_siswa=<?=$data['id_siswa'] ?>"><i class="bi bi-trash text-danger"></i></a></td>
               </tr>
             <?php
             }
