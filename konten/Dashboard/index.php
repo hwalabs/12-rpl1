@@ -14,19 +14,22 @@
 </head>
 
 <body>
-  <h4>Selamat datang, ini adalah halaman dashboard!</h4>
-  <div class="container">
+  <?php
+    include __DIR__ . '/../../backend/querySql/readSiswa.php'
+  ?>
+  <div class="container-fluid p-0">
+    <h4>Selamat datang, ini adalah halaman dashboard!</h4>
     <div class="row">
       <div class="col-sm-4">
-        <div class="card shadow-sm m-3">
+        <div class="card shadow-sm">
           <div class="card-body">
             <h3 class="text-muted">Guru</h3>
-            <h4><i class="bi bi-people-fill"></i> 50</h4>
+            <h4><i class="bi bi-people-fill"></i><?= $jumlahSiswa ?></h4>
           </div>
         </div>
       </div>
       <div class="col-sm-4">
-        <div class="card shadow-sm m-3">
+        <div class="card shadow-sm">
           <div class="card-body">
             <h3 class="text-muted">Siswa</h3>
             <h4><i class="bi bi-people-fill"></i> 1000</h4>
@@ -34,7 +37,6 @@
         </div>
       </div>
     </div>
-
   </div>
 </body>
 

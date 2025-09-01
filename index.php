@@ -60,7 +60,7 @@
         aria-expanded="false"
         aria-controls="menuSiswa"
       >
-        Siswa
+        <i class="bi bi-mortarboard"></i>Siswa
       </a>
       <div class="collapse submenu ms-4" id="menuSiswa">
         <a href="konten/DataSiswa/" target="kontenFrame">

@@ -43,7 +43,7 @@
                 <td class="w-25"><?= $data['jenis_kelamin'] ?></td>
                 <td class="w-25"><?= $data['jurusan'] ?></td>
                 <td class="w-25"><a href="formEditSiswa.php?id_siswa=<?= $data['id_siswa'] ?>"><i class="bi bi-pencil-square"></i></a></td>
-                <td class="w-25"><a href="../../backend/querySql/deleteSiswa.php?id_siswa=<?=$data['id_siswa'] ?>"><i class="bi bi-trash text-danger"></i></a></td>
+                <td class="w-25"><a href="../../backend/querySql/deleteSiswa.php?id_siswa=<?=$data['id_siswa'] ?>" onclick="return confirm('Yakin mau hapus data siswa ini?')"><i class="bi bi-trash text-danger"></i></a></td>
               </tr>
             <?php
             }
