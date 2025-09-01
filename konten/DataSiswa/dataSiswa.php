@@ -27,6 +27,7 @@
               <th scope="col">Tanggal Lahir</th>
               <th scope="col">Jenis Kelamin</th>
               <th scope="col">Jurusan</th>
+              <th scope="col">Aksi</th>
             </tr>
           </thead>
           <tbody>
@@ -34,13 +35,15 @@
               $no = 0;
               while ($data = mysqli_fetch_assoc($tampil)) {
                 $no++;
-            ?>
+            ?> 
               <tr>
                 <td><?= $no ?></td>
                 <td><?= $data['nama'] ?></td>
                 <td><?= $data['tanggal_lahir'] ?></td>
                 <td><?= $data['jenis_kelamin'] ?></td>
                 <td><?= $data['jurusan'] ?></td>
+                <td><a href="formEditSiswa.php?id_siswa=<?= $data['id_siswa'] ?>"><i class="bi bi-pencil-square"></i></a></td>
+                <td><a href="../../backend/querySql/deleteSiswa.php?id_siswa=<?=$data['id_siswa'] ?>"><i class="bi bi-trash text-danger"></i></a></td>
               </tr>
             <?php
             }

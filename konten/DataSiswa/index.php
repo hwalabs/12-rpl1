@@ -79,13 +79,13 @@
                         aria-label="Default select example"
                         name="jurusan">
                         <option selected>Pilih Jurusan</option>
-                        <option value="rpl">
+                        <option value="Rekayasa Perangkat Lunak">
                           Rekayasa Perangkat Lunak
                         </option>
-                        <option value="tbsm">
+                        <option value="Teknik Bisnis Sepeda Motor">
                           Teknik Bisnis Sepeda Motor
                         </option>
-                        <option value="atph">
+                        <option value="Agribisnis Tanaman Pangan dan Hortikultura">
                           Agribisnis Tanaman Pangan dan Hortikultura
                         </option>
                       </select>

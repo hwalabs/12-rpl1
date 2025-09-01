@@ -12,7 +12,7 @@
         $hasil = $conn->query($sqlAddSiswa);
 
         if ($hasil) {
-            echo 'data berhasil disimpan';
+            header("Location: ../../konten/DataSiswa/dataSiswa.php");
         } else{
             echo 'data gagal disimpan';
         }
