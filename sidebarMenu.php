@@ -87,6 +87,9 @@
     <a href="konten/DataGuru/index.php" target="kontenFrame">
       <i class="bi bi-person-badge"></i> Data Guru
     </a>
+    <a href="tambahAdmin.php" target="kontenFrame">
+      <i class="bi bi-person-badge"></i> Tambah admin
+    </a>
     <a href="backend/querySql/logout.php">
       <i class="bi bi-box-arrow-right"></i> Logout
     </a>
