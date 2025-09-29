@@ -20,5 +20,5 @@ if ($hasil->num_rows > 0) {
         header("Location: ../../sidebarMenu.php");
     }
 } else {
-    echo "<script type='text/javascript'>alert('Email atau Password salah!');</script>";
+    echo "<script type='text/javascript'>alert('Email atau Password salah!');window.location.href='../../index.php';</script>";
 }
